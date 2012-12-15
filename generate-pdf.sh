@@ -1,3 +1,4 @@
+#!/bin/bash
 TEMPDIR="tmp-generate-pdf"
 ZIPNAME="tmp.zip"
 STYLE=${STYLE:-"ccap-physics"}

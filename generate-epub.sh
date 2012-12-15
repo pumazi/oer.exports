@@ -1,3 +1,4 @@
+#!/bin/bash
 TEMPDIR="tmp-generate-epub"
 ZIPNAME="tmp.zip"
 COLID_VER_PATH=${1:-"col11406/1.7"}
