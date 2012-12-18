@@ -1,10 +1,15 @@
-docbook-xsl-*
-test-ccap-*
+# Development #
+###############
 .*
 lib/*
 bin/*
 *.pyc
 include
+
+# Test & Runtime #
+##################
+docbook-xsl-*
+test-ccap-*
 result*.pdf
 *.epub
 tempdir
