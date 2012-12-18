@@ -53,10 +53,18 @@ system.
     brew install wkhtmltopdf
     brew install librsvg
 
+And the following will need to be set up manually:
+
+- `Inkscape <http://inkscape.org/download/>`_
+
+To set up the python environment and have it ready to the oer.export
+commands::
+
     cd oer.exports
     virtualenv .
     source bin/activate
     easy_install lxml argparse pil
+
 
 Usage
 -----
