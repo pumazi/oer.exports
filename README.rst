@@ -56,6 +56,17 @@ system.
 And the following will need to be set up manually:
 
 - `Inkscape <http://inkscape.org/download/>`_
+- `DocBook XSL NS
+  <http://sourceforge.net/projects/docbook/files/docbook-xsl-ns/>`_
+
+The Docbook XSL NS package will need to be downloaded an placed
+locally in the root of the workspace as the ``docbook-xsl`` directory.
+At this time some scripts use the ``docbook-xsl-ns`` package, while
+others use a ``ruby`` based alternative found in the
+``docbook-xsl`` directory.
+Depending on what you're working on, you may need to replace (or
+symlink) the ``docbook-xsl-ns`` package with the existing ``ruby``
+based alternative.
 
 To set up the python environment and have it ready to the oer.export
 commands::
@@ -64,7 +75,6 @@ commands::
     virtualenv .
     source bin/activate
     easy_install lxml argparse pil
-
 
 Usage
 -----
