@@ -9,7 +9,7 @@ This package generates PDFs from complete zips of collections or zips
 of modules by converting the collxml and cnxml to docbook and then using a
 XHTML+CSS3 to PDF script.
 
-Technologie s used:
+Technologies used:
 
 * Connexions  : http://cnx.org
 * Docbook XSL : http://docbook.org
@@ -51,6 +51,7 @@ system.
     brew install librsvg
     brew install https://github.com/adamv/homebrew-alt/blob/master/non-free/princexml.rb
     brew install wkhtmltopdf
+    brew install librsvg
 
     cd oer.exports
     virtualenv .
