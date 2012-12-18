@@ -5,6 +5,20 @@ oer.exports
 Logic used to transform/package various pieces of Rhaptos/Connxions content to
 other formats.
 
+This package generates PDFs from complete zips of collections or zips
+of modules by converting the collxml and cnxml to docbook and then using a
+XHTML+CSS3 to PDF script.
+
+Technologie s used:
+
+* Connexions  : http://cnx.org
+* Docbook XSL : http://docbook.org
+* Docbook RNG : http://docbook.org/rng
+* xsltproc    : http://xmlsoft.org/XSLT
+* Saxon 9     : http://saxon.sourceforge.net
+* pmml2svg    : http://pmml2svg.sourceforge.net
+* STIX Fonts  : http://stixfonts.org
+
 Installation
 ------------
 
