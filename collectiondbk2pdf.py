@@ -126,8 +126,15 @@ def loadModule(moduleDir):
     cnxmlPath = os.path.join(moduleDir, 'index_auto_generated.cnxml')
     if not os.path.exists(cnxmlPath):
         cnxmlPath = os.path.join(moduleDir, 'index.cnxml')
-    cnxmlStr = open(cnxmlPath).read()
-    cnxml = etree.parse(StringIO(cnxmlStr))
+
+    try:
+        cnxml = etree.parse(cnxmlPath)
+    except etree.XMLSyntaxError, err:
+        # Print out the file that has the issue, because lxml
+        #   sometimes doesn't do this.'
+        print("Syntax error in '%s'" % cnxmlPath)
+        raise err
+
     files = {}
     for f in IMAGES_XPATH(cnxml):
         try:
