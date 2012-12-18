@@ -46,14 +46,14 @@
 
 <section>
 <title>These are "split" elements with special classes from previously existing "hybrid" art-connections feature</title>
-<!--------------------------------------------------------------------- 
+<!--
 1- Use existing .art-connections for eoc generation && eob solutions
    
 
 2- Set feature back to generic note and add .art class 
    a- extracted figures/caption from previous art-connections exercise
    b- extracted .art-connections <problem> and wrapped in <para>
- -------------------------------------------------------------------->
+-->
 <note class="art-connections">
  <title>Feature Title</title>
   <para id="fs-id1418460">
