@@ -25,19 +25,38 @@ Installation
 These instructions assume you have ``python`` (version >= 2.6) and
 ``virtualenv`` installed.
 
+::
+
+    git clone https://github.com/Connexions/oer.exports.git
+
+
 Installation on Debian
 ~~~~~~~~~~~~~~~~~~~~~~
 
-To install and get this package running on Debian, use the following commands::
+The following instructures can be used to install the various
+dependencies on Debian. If you haven't already done so, please include
+the contrib and non-free repositories::
 
-    sudo apt-get install libxslt1-dev libxml2-dev # For lxml to compile
-    sudo apt-get install librsvg2-bin             # To convert SVG and math to PNG
-    sudo apt-get install otf-stix
+    sed -i 's/$/ contrib non-free/' /etc/apt/sources.list
+    apt-get update
 
-    cd oer.exports
-    virtualenv .
-    source bin/activate
-    easy_install lxml argparse pil
+And if you haven't already installed python, please use the following::
+
+    apt-get install python
+
+The following are system level dependencies required to run some parts
+of these scripts::
+
+    apt-get install python-lxml python-argparse python-imaging
+    apt-get install sun-java6-bin docbook-xsl-ns librsvg2-bin libgif4
+    apt-get install otf-stix
+
+PrinceXML is not in the Debian repository, so you'll need to download
+the deb manually. See `princexml.com`_ for the latest version.
+::
+
+    wget  http://www.princexml.com/download/prince_8.1-3_ubuntu12.04_i386.deb
+    dpkg --install prince_8.1-3_ubuntu12.04_i386.deb
 
 Installation on Mac
 ~~~~~~~~~~~~~~~~~~~
