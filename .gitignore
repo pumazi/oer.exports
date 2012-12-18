@@ -9,8 +9,12 @@ include
 # Test & Runtime #
 ##################
 docbook-xsl-*
-test-ccap-*
 result*.pdf
 *.epub
 tempdir
 css/ccap-numbering.css
+test-ccap-*
+test-ccap/*/_autogen*
+test-ccap/*/index.standalone.dbk
+test-ccap/cover.png
+test-ccap/collection.dbk
